@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+@media (width > 45em) {
+  .container {
+    flex-direction: row-reverse;
+  }
+}
+
+header {
+  padding: 2rem 2rem;
+}
+@media (width > 45em) {
+  header {
+    padding: 3rem 2rem;
+    position: absolute;
+    left: 5rem;
+  }
+}
+
+.hero-image img {
+  width: 100%;
+}
+@media (width > 45em) {
+  .hero-image .mobile-img {
+    display: none;
+  }
+}
+.hero-image .desktop-img {
+  display: none;
+}
+@media (width > 45em) {
+  .hero-image .desktop-img {
+    display: block;
+    width: 30rem;
+  }
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: hsl(0, 36%, 70%);
+  text-transform: uppercase;
+  width: 19rem;
+  letter-spacing: 1rem;
+  margin: 4rem auto 2rem;
+  font-weight: 300;
+}
+@media (width > 45em) {
+  h1 {
+    font-size: 4.3rem;
+    margin: 7rem 0 0;
+    text-align: left;
+  }
+}
+h1 span {
+  color: hsl(0, 6%, 24%);
+  font-weight: 600;
+}
+
+p {
+  font-size: 1rem;
+  text-align: center;
+  padding: 0 3rem;
+  line-height: 1.9rem;
+  color: hsl(0, 36%, 70%);
+}
+@media (width > 45em) {
+  p {
+    font-size: 1.06rem;
+    text-align: left;
+    padding-left: 0;
+    padding-right: 4rem;
+  }
+}
+
+.content {
+  background-image: url("/images/bg-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  background-image: linear-gradient(hsl(0, 100%, 98%), hsl(0, 0%, 100%));
+  background-size: cover;
+}
+@media (width > 45em) {
+  .content {
+    padding: 2rem 7rem;
+    height: 35rem;
+  }
+}
+
+form {
+  display: flex;
+  margin-top: 3rem;
+  width: 26rem;
+  position: relative;
+  margin: 2rem auto;
+}
+@media (width > 45em) {
+  form {
+    width: 29rem;
+    margin: 2rem 0 0;
+  }
+}
+
+form input {
+  padding: 1.1rem 2rem;
+  border-radius: 12rem;
+  width: 25rem;
+  outline: none;
+  border: 2px solid hsl(0, 36%, 70%);
+}
+
+form button {
+  border: none;
+  outline: none;
+  border-radius: 12rem;
+  padding: 0.8rem 2.5rem;
+  cursor: pointer;
+  background-image: linear-gradient(hsl(0, 74%, 74%), hsl(0, 80%, 86%));
+  box-shadow: 2px 10px 5px black;
+  position: absolute;
+  top: 0rem;
+  right: 1rem;
+}
+
+#error {
+  position: absolute;
+  left: 1rem;
+  top: 3.5rem;
+  color: hsl(0, 93%, 68%);
+  display: none;
+}
+
+#error-icon {
+  position: absolute;
+  top: 0.8rem;
+  right: 7.5rem;
+  display: none;
+}
+
+footer {
+  background-image: linear-gradient(hsl(0, 100%, 98%), hsl(0, 0%, 100%));
+  color: white;
+}
+
+.attribution {
+  text-align: center;
+  color: hsl(0, 36%, 70%);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */
